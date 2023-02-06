@@ -1,115 +1,89 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Head from 'next/head'
+import Script from 'next/script'
+import Navbar from '../components/navbar.js'
+import AboutMe from '../components/aboutme.js'
+import Projects from '../components/projects.js'
+import Skills from '../components/skills.js'
+import Title from '../components/title.js'
+import Divider from '../components/divider.js'
 
-export default function Home() {
+export default function Home () {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Nancy Lubalo | nlubalo.com</title>
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1'
+        ></meta>
+        <meta
+          property='og:description'
+          content='A personal portfolio website Nancy Lubalo.
+            Data Engineer.
+          '
+        />
+        <meta
+          name='description'
+          content='A personal portfolio website for Nancy Lubalo.
+            Data Engineer.
+          '
+        />
+        <meta
+          property='og:title'
+          content='Nancy Lubalo | nlubalo.com'
+          key='title'
+        />
+        <meta property='og:image' content={'/nlubalo.webp'} />
+        <meta property='og:url' content={'https://nlubalo.com'} />
+        <meta name='twitter:card' content='summary_large_image'></meta>
+        <meta name='twitter:site' content='@nlubalo' />
+        <meta name='twitter:creator' content='@nlubalo' />
+        <meta name='twitter:title' content='Nancy Lubalo | nlubalo.com' />
+        <meta
+          name='twitter:description'
+          content='A personal portfolio website for Nancy Lubalo.
+          Data Engineer.
+        '
+        />
+        <meta name='twitter:image' content='/nlubalo.webp' />
+        <link rel='canonical' href={'https://nlubalo.com'} />
       </Head>
-
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+      <Script id='scheme' type='application/ld+json'>{`
+{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Nancy Lubalo",
+  "url": "https://nlubalo.com",
+  "image": "",
+  "sameAs": [
+    "https://www.linkedin.com/in/nlubalo/",
+    "https://github.com/nlubalo"
+  ],
+  "jobTitle": "Data Engineer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": ""
+  } 
+}
+`}</Script>
+<Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-KDWPV496DM"></Script>
+<Script strategy="afterInteractive" id='google'>
+  {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KDWPV496DM');`}
+</Script>
+      <div
+        style={{ scrollBehavior: 'smooth' }}
+        className='bg-slate-900 w-full overflow-x-hidden flex flex-col items-center'
+      >
+        <Navbar />
+         <Title/>
+         <Divider/>
+        <AboutMe/>
+        <Skills/>
+        <Projects />
+      </div>
+    </>
   )
 }

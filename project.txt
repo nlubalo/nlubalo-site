@@ -1,0 +1,76 @@
+Project details
+The goal of this project is to design and implement an Extract, Transform, Load (ETL) pipeline on the Amazon Web Services (AWS) cloud platform. The ETL pipeline will be used to transfer data from various sources into a centralized data store for analysis and reporting purposes.
+
+Objectives:
+ • Design and implement a scalable, secure, and highly available ETL pipeline on AWS.
+ • Integrate data from multiple sources into a centralized data store.
+ • Perform data cleaning, transformation, and enrichment to prepare the data for analysis and reporting.
+ • Provide data access to stakeholders for reporting and analysis purposes.
+
+Technology Stack:
+ • AWS S3 for data storage.
+ • AWS Glue for data cataloging and ETL.
+ • AWS RDS or Redshift for a centralized data store.
+ • AWS QuickSight for data visualization.
+
+Expected Outcome:
+A centralized data store that provides a scalable, secure, and flexible solution for storing and processing large and varied data sets. The ETL pipeline will enable efficient data integration, cleaning, and transformation, providing stakeholders with access to high-quality data for reporting and analysis purposes.
+
+about the product details
+Database Type
+MySQL, MS SQL, MS Access, Oracle, SQLite, PostgreSQL, MongoDB, Couchbase, Teradata, Realm Database, Azure Cosmos DB, LevelDB
+
+https://www.upwork.com/services/product/development-it-an-end-to-end-etl-pipeline-for-batch-streaming-data-on-aws-1406336176810135552
+
+PROJECT 2
+
+
+Project details
+Overview:
+The goal of this project is to design and implement a serverless application on the Amazon Web Services (AWS) cloud platform.
+The serverless architecture will allow for cost-effective and scalable deployment of the application, with no upfront infrastructure costs.
+
+Objectives:
+ • Design and implement a serverless application on AWS.
+ • Use serverless technologies to reduce infrastructure costs and increase scalability.
+ • Integrate with other AWS services as needed to provide a complete solution.
+ • Ensure the application is secure and meets performance and availability requirements.
+
+Technology Stack:
+ • AWS Lambda for serverless compute.
+ • AWS API Gateway for serverless APIs.
+ • AWS DynamoDB for serverless NoSQL data storage.
+ • AWS S3 for serverless object storage.
+ • AWS CloudFront for serverless content delivery.
+
+Expected Outcome:
+A serverless application that provides cost-effective and scalable deployment, with no upfront infrastructure costs.
+The serverless architecture will enable the application to automatically scale to meet changing demand, reducing infrastructure costs.
+
+PROJECT 3
+
+Project details
+The goal of this project is to build a data lake on the AWS cloud platform.
+The data lake will serve as a central repository to store and process large and varied data sets.
+The data lake will be designed to provide scalable and flexible storage options, allowing for the storage of structured,
+semi-structured, and unstructured data.
+
+Objectives:
+ • Implement a scalable, secure, and highly available data lake on AWS.
+ • Integrate data from various sources into the data lake.
+ • Enable data analysis and business intelligence through data processing and analysis tools.
+ • Provide data access to stakeholders for reporting and analysis purposes.
+
+Technology Stack:
+ • AWS S3 for data storage.
+ • AWS Glue for data cataloging and ETL.
+ • AWS Athena for SQL-based data querying.
+ • AWS QuickSight for data visualization.
+ • AWS Lake Formation for data lake management.
+
+Expected Outcome:
+A centralized data lake that provides a scalable, secure, and flexible solution for storing and processing large and varied data sets.
+The data lake will enable data analysis and business intelligence,
+providing insights that drive better business decision making.
+
+https://www.upwork.com/services/product/development-it-a-full-fledged-data-lake-built-on-aws-cloud-1401968873643827200
